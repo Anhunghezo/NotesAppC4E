@@ -31,12 +31,12 @@ for (let i = 0; i < searchNotes.length; i++) {
     listNoteHTML += ` <div class="note-item">
      <button id="move" data-note-id="${note.id}"><div>${note.title}</div> 
     <div class="note"><a href=""></a></div>
-    <button class="btn" data-note-id="${note.id}"><i class="fa fa-close"></i></button>
+    <button id="btn" data-note-id="${note.id}"><i class="fa fa-close"></i></button>
     </button>
    </div>`
 }
 domDraft[0].innerHTML = listNoteHTML
-document.getElementsByClassName("btn").addEventListener("click",
+document.getElementById("btn").addEventListener("click",
 function deletedButton() {
  axios.put(`https://5df38c84f9e7ae00148012bc.mockapi.io/NOTE4E/notes/${this.dataset.noteId}`, {
     status   : 'isDeleted'
