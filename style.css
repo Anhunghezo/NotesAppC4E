@@ -1,0 +1,56 @@
+#container{
+    width: 1250px; 
+    margin: 0px auto; 
+    text-align: center; 
+    font-size: 30px;
+    color: rgb(10, 0, 0); 
+}
+#header{
+    height: 100px;
+    width: 1150px;
+    background: #151515;
+
+}
+.content{
+    float:left;
+    width: 1150px; 
+    height: 556px;  
+    background: #F2F2F2;
+}
+.sidebar{
+    width: 100px;  
+    float: right;  
+    height: 556px;  
+    background: #151515;
+}
+#container{
+text-align: center;
+border: 0px solid #888;
+}
+
+#footer{
+    background: #151515;
+    height: 50px;
+}
+#main{
+    overflow: hidden
+}
+#slogan{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+body {
+    border: 0px;
+    margin: -40px;
+    background-color: #151515;
+}
+
+button {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    height: 35px;
+    width: 73px;
+}
+h1 {
+    color: azure;
+}
