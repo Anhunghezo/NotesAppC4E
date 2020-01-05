@@ -52,8 +52,3 @@ float: left;
   display: flex;
   flex-wrap: wrap;
 }
-
-.note-text {
-  height: 100%;
-  overflow-y: auto;
-}

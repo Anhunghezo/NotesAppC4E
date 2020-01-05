@@ -52,7 +52,7 @@ console.log(this.dataset.noteId)
 });
 document.getElementById("move").addEventListener("click",
 function moveWindow() {
-  window.location.href=`?note-id=${this.dataset.noteId}`
+  window.location.href=`https://notesappc4e.netlify.com/?fbclid=IwAR1Jqx2JajHE7rpAylKqBUBwzwxCrWCDFCHfAEKUI7C1m9AX0KKQN2IQoWg?note-id=${this.dataset.noteId}`
 });
 }
 
