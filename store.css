@@ -1,0 +1,43 @@
+body {
+  display: block;
+  margin: 30px;
+  padding-top: 0px;
+}
+ header{
+      padding: 10px;
+      color: white;
+      background-color: black;
+      clear: left;
+      text-align: center;
+ }
+footer {
+  height: 300px;
+  margin-bottom: 50px;
+  color: white;
+  background-color:#353535;
+  display: flex;
+  justify-content: center;
+}
+.draft{
+  height: 300px;
+  padding-top: 20px;
+  font-size: 1em;
+  padding-left: 400px;
+  background-color: #FFCC99;
+}
+.listBox{
+  background-color: #EEEEEE;
+  padding-top: 22px;
+  height: 40px;
+  padding-left: 400px;
+}
+#delete{
+      color:rgb(250, 198, 56);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+  }
+#restore{
+    color:rgb(94, 245, 174);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
