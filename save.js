@@ -41,9 +41,12 @@ function renderSearchNotes(searchNotes) {
 								<span>${note.title}</span>
 							</div>
 							
-							<div class="note__actions">
+							<div class="note__actions btn-group">
 								<button class="btn remove-note-button" data-note-id="${note.id}">
 									<i class="fa fa-close"></i>
+								</button>
+								<button class="btn view-note-button" data-note-id="${note.id}">
+									<i class="fa fa-eye"></i>
 								</button>
 							</div>
 						</div>
@@ -67,11 +70,9 @@ function renderSearchNotes(searchNotes) {
                 console.log(error);
             });
     });
-   
-    document.getElementById('move').addEventListener('click',
-        function moveWindow() {
-            window.location.href = `https://notesappc4e.netlify.com/?fbclid=IwAR1Jqx2JajHE7rpAylKqBUBwzwxCrWCDFCHfAEKUI7C1m9AX0KKQN2IQoWg?note-id=${this.dataset.noteId}`;
-        });
+    $('.view-note-button').on('click', function () {
+        window.location.href = `https://notesappc4e.netlify.com/?note-id=${this.dataset.noteId}`;
+    });
 }
 
 window.addEventListener('load', function () {
