@@ -22,6 +22,7 @@ document.getElementById('save').addEventListener('click',
         })
             .then(function (response) {
                 $('#save-success-alert').addClass('show');
+                console.log(response);
             })
             .catch(function (error) {
                 console.log(error);
