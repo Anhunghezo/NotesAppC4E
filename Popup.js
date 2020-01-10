@@ -1,4 +1,4 @@
-if (id==0){
+if (id==404){
     $(document).ready(function () {
         $('#titleModal').modal('show');
         $('#button-save-title').on('click', () => {
