@@ -76,7 +76,7 @@ function renderSearchNotes(searchNotes) {
             });
     });
     $('.view-note-button').on('click', function () {
-        window.location.href = `https://notesappc4e.netlify.com/?note-id=${this.dataset.noteId}`;
+        window.location.href = `https://blinkblog.netlify.com/?note-id=${this.dataset.noteId}`;
     });
 }
 
