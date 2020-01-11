@@ -31,6 +31,11 @@ function renderDelNotes(delNotes){
     domDraft[0].innerHTML = listNoteHTML;
 }
 
+document.getElementById('return').addEventListener('click',
+    function moveWindow() {
+        window.location.href='https://notesappc4e.netlify.com';
+    });
+
 let deleteAll = document.getElementById('delete');
 deleteAll.onclick = function(){
     let noteCheckBox = document.getElementsByClassName('noteCheckBox');
