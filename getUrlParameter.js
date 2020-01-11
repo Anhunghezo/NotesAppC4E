@@ -1,15 +1,10 @@
-
-let url_parameter = window.location.search;
-console.log(url_parameter);
-console.log(typeof(url_parameter));
-
-if(url_parameter== ""){
-    var id = 404;
-}else{
-    let arrQuery = url_parameter.split("=");
-    console.log(arrQuery);
-
-    var id = arrQuery[1];
-    console.log(id);
+function getQuery () {
+    let urlParameter = window.location.search;
+    let praseUrl = urlParameter.slice(1).split('&');
+    let query = {};
+    praseUrl.forEach(item => {
+        let [key, value] = item.split('=');
+        query[key] = value;
+    });
+    return query;
 }
-

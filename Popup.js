@@ -1,14 +1,10 @@
-if (id==404){
-    $(document).ready(function () {
-        $('#titleModal').modal('show');
-        $('#button-save-title').on('click', () => {
-            titles = $('#title-input').val();
-        });
+window.addEventListener('load', function () {
+    let query = getQuery();
+    let noteId = query['note-id'];
+    if (noteId) return;
+		
+    $('#titleModal').modal('show');
+    $('#button-save-title').on('click', () => {
+        titles = $('#title-input').val();
     });
-}else{
-
-}
-
-
-
-console.log(id);
+});
