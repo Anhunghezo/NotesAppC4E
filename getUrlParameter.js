@@ -1,10 +1,10 @@
-window.addEventListener("load",function(){
-    try{
-        let url_parameter = window.location.search;
-        console.log(url_parameter);
-    } catch (error){
-        console.log(error);
-    }
-})
-
-let url_parameter;
+function getQuery () {
+    let urlParameter = window.location.search;
+    let praseUrl = urlParameter.slice(1).split('&');
+    let query = {};
+    praseUrl.forEach(item => {
+        let [key, value] = item.split('=');
+        query[key] = value;
+    });
+    return query;
+}
