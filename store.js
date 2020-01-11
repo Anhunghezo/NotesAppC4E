@@ -33,7 +33,7 @@ function renderDelNotes(delNotes){
 
 document.getElementById('return').addEventListener('click',
     function moveWindow() {
-        window.location.href='https://notesappc4e.netlify.com';
+        window.location.href='https://blinkblog.netlify.com';
     });
 
 let deleteAll = document.getElementById('delete');
